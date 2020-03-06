@@ -1,0 +1,48 @@
+*{
+	margin:0;
+	padding:0;
+	//box-sizing:border-box;
+}
+body{
+	background:#333;
+	display:flex;
+	justify-content:center;
+}
+@keyframes dong{
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(360deg)}
+
+}
+#taiji{
+  position:relative;
+	width:200px;
+	height:200px;
+	border:1px solid ;
+	border-radius:50%;
+background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 50%,#ffffff 50%,#000000 50%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+	animation:dong 1s infinite linear;
+}
+#taiji::before{
+  position:absolute;
+  margin-left:50px;
+	top:0;
+	content:'';
+	width:100px;
+	height:100px;
+	border:0px solid;
+	border-radius:50%;
+	background:black;
+	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 25%,#000000 25%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+}
+#taiji::after{
+  position:absolute;
+  margin-left:50px;
+	bottom:0;
+	content:'';
+	width:100px;
+	height:100px;
+	border:0px solid;
+	border-radius:50%;
+	background:#ffffff;
+	background: -webkit-radial-gradient(center, ellipse cover, #000000 0%,#000000 25%,#ffffff 25%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+}
