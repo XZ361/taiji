@@ -71,5 +71,9 @@ background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 50%,#ffffff 50%,#00
 	}
 }
 #description{
-	font-size: 36px;
+	font-size: 16px;
+}
+@media(max-width:500px)  {
+	#description{
+	font-size: 36px;}	
 }
